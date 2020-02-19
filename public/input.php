@@ -1,10 +1,6 @@
 <?php
-
-// POSTでアクセスされた時はsave
-// saveが完了したらlistにリダイレクト
-
-
 // GETでアクセスされた場合は画面を表示
+// require_once('vendor/bin/input.php');
 echo '<!DOCTYPE html>
     <head>
         <title>掲示板</title>

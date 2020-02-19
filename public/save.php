@@ -1,6 +1,8 @@
 <?php
-require_once('./Post.php');
-require_once('./PostMethod.php');
+require_once('../vendor/autoload.php');
+use bbs\PostMethod;
+use PostMethod;
+
 date_default_timezone_set('Asia/Tokyo');
 $fileName = date('Y-m-d H:i:s');
 $name = $_POST['name'];

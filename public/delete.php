@@ -1,6 +1,9 @@
 <?php
-require_once('../private/config.php');
-require_once('./PostMethod.php');
-$postMethod = new PostMethod();
+require_once('v../endor/autoload.php');
+use bbs\PostMethod;
 
-$list = $postMethod->delete();
+$postMethod = new PostMethod();
+$fileName = $_POST['fileName'];
+
+$list = $postMethod->delete($fileName);
+header("Location: {$url}/input.php");

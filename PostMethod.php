@@ -1,6 +1,6 @@
 <?php
-require_once('../private/config.php');
-require_once('./Post.php');
+namespace bbs;
+
 class PostMethod
 {
     public function save($post)
@@ -30,12 +30,8 @@ class PostMethod
         return $data;
     }
 
-    public function delete()
+    public function delete($fileName)
     {
-        $fileName = $_POST['fileName'];
- 
-        //クリックした配列のファイル名がディレクトリの中にあれば削除する
-        //unlink($fileName) boolean型
         unlink($fileName);
     }
 }

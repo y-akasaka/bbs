@@ -1,0 +1,11 @@
+{
+    "name": "aksk/bbs",
+    "description": "掲示板",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bbs\\": "./"
+        }
+    }
+}
